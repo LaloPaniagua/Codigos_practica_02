@@ -1,4 +1,5 @@
 #include<stdio.h>
+//Prototipos de las funciones
 void sumar(double a,double b,double c);
 void restar(double a,double b,double c);
 void multiplicar(double a,double b,double c);
@@ -11,9 +12,9 @@ int main()
 		v1=&val1;
 		v2=&val2;
 		r=&result;
-		printf("Seleccione la operaci髇 a realizar ingresando la letra correspondiente: \na)Suma\nb)Resta\nc)Multiplicaci髇\nd)Divisi髇\n\n");
+		printf("Seleccione la operaci贸n a realizar ingresando la letra correspondiente: \na)Suma\nb)Resta\nc)Multiplicaci贸n\nd)Divisi贸n\n\n");
 		scanf("%c",&option);
-				
+		//Selecci贸n de la operaci贸n a realizar e ingreso de los valores (estos se almacenan en variables y son le铆dos por las funciones por medio de apuntadores		
 		switch(option)
 			{
 				case 'a':
@@ -45,24 +46,24 @@ int main()
 					dividir(*v1,*v2,*r);
 					break;
 				default:
-					printf("\nNo se ha seleccionado una opci髇 v醠ida");
+					printf("\nNo se ha seleccionado una opci贸n v谩lida");
 					break;
 			}
 	}
 
-void sumar(double a,double b,double c){
+void sumar(double a,double b,double c){ //Funci贸n suma
     c=a+b;
     printf("El resultado es: %f",c);
 }
-void restar(double a,double b,double c){
+void restar(double a,double b,double c){ //Funci贸n resta
     c=a-b;
     printf("El resultado es: %f",c);
 }
-void multiplicar(double a,double b,double c){
+void multiplicar(double a,double b,double c){ //Funci贸n multiplicar
     c=a*b;
     printf("El resultado es: %f",c);
 }
-void dividir (double a,double b,double c){
+void dividir (double a,double b,double c){ //Funci贸n dividir (contemplando el caso de la divisi贸on entre cero
     if(b!=0)
     	{
     		c=a/b;
@@ -71,3 +72,4 @@ void dividir (double a,double b,double c){
 	else
 		printf("El divisor no puede valer cero");
 }
+// Programa realizado Por Eduardo Miguel paniagua Broca y Diego Barrag谩n Rivera el 11/3/2021
