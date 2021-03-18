@@ -2,13 +2,13 @@
 
 int main(){
 	int arr[10], *ptr;
-	int j;
-	for(int i=0;i<=10;i++){
+	int j=1;
+	for(int i=0;i<10;i++){
 		arr[i]=j;
 		j++;
 	}
 	arr[1]=5; //equivale a *(arr+1)=5
-	for(int i=0;i<=10;i++){
+	for(int i=0;i<10;i++){
 		printf("%d, ",arr[i]);
 	}
 	printf("\n\n");
