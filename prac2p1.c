@@ -73,4 +73,4 @@ int main(){
 
 return 0xF;
 }
-// Realizado por Diego Barragan Rivera y Eduardo Paniagua Broca en 11/03/2021
+// Realizado por Diego Barragan Rivera y Eduardo Miguel Paniagua Broca en 11/03/2021
