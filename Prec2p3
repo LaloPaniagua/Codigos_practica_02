@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 int main(){
 	int arr[10], *ptr;
 	int j;
@@ -38,3 +37,4 @@ ptr[-1]: valor de arr[1]=5
 ptr[9]: valor fuera del arreglo ya que seria equivalente a arr[11] 
 
 */
+// Codigo realizado por Diego Barragan Rivera en 11//03/2021
