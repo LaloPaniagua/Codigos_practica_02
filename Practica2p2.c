@@ -39,7 +39,8 @@ int main()
     printf("\nValor de la variable anonima para long: %lf", *l);
     printf("\nValor de la variable anonima para float: %f", *f);
     printf("\nValor de la variable anonima para short: %d", *s);
-
+    
+    //Cambio de los valores de las variables anónimas
     *i = 9;
     *c = 's'; 
     *d = 425;
@@ -47,6 +48,7 @@ int main()
     *f = 366;
     *s = 14; 
 
+    //Impresión de las nuevas variables
     printf("\n\n\nNuevo valor de la variable anonima para int: %i", *i);
     printf("\nNuevo valor de la variable anonima para char: %c", *c);
     printf("\nNuevo valor de la variable anonima para double: %lf", *d);
@@ -54,6 +56,7 @@ int main()
     printf("\nNuevo valor de la variable anonima para float: %f", *f);
     printf("\nNuevo valor de la variable anonima para short: %d", *s);
 
+    //Liberación de las variables anónimas
     free(i);
     free(c);
     free(d);
@@ -63,3 +66,4 @@ int main()
     
     return 0;
 }
+// Código realizado por Justheene Ezequiel Salgado Becerra y Alejandra Daniela Ávila González el 11/3/2021
