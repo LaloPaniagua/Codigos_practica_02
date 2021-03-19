@@ -13,7 +13,7 @@ int main()
 		v1=&val1;
 		v2=&val2;
 		r=&result;
-		printf("Seleccione la operaciÃ³n a realizar ingresando la letra correspondiente: \na)Suma\nb)Resta\nc)MultiplicaciÃ³n\nd)DivisiÃ³n\n\n");
+		printf("Seleccione la operaciÃ³n a realizar ingresando la letra correspondiente: \na)Suma\nb)Resta\nc)Multiplicacion\nd)Division\n\n");
 		scanf("%c",&option);
 		//Selección de la ooperación a realizar		
 		switch(option)
@@ -47,28 +47,28 @@ int main()
 					dividir(v1,v2,r);
 					break;
 				default:
-					printf("\nNo se ha seleccionado una opciÃ³n vÃ¡lida");
+					printf("\nNo se ha seleccionado una opcion valida");
 					break;
 			}
 	}
 //Codificación de las funciones correspondientes a cada operación
 void sumar(double *a,double *b,double *c){
    * c=*a+*b;
-    printf("El resultado es: %f",*c);
+    printf("El resultado es: %lf",*c);
 }
 void restar(double *a,double *b,double *c){
     *c=*a-*b;
-    printf("El resultado es: %f",*c);
+    printf("El resultado es: %lf",*c);
 }
 void multiplicar(double *a,double *b,double *c){
     *c=*a * *b;
-    printf("El resultado es: %f",*c);
+    printf("El resultado es: %lf",*c);
 }
 void dividir (double *a,double *b,double *c){
     if(*b!=0)
     	{
     		*c=*a / *b;
-    		printf("El resultado es: %f",*c);
+    		printf("El resultado es: %lf",*c);
 		}
 	else
 		printf("El divisor no puede valer cero");
